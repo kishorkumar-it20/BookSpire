@@ -24,7 +24,7 @@ class _RecommendedState extends State<Recommended> {
   Future<void> fetchrem() async{
     print("Response arrived");
     try{
-      final response = await http.get(Uri.parse("http://192.168.252.30:3000/recommended"));
+      final response = await http.get(Uri.parse(""));
       if(response.statusCode == 200){
         print('Data Received');
         final List<dynamic> jsonData = json.decode(response.body);
