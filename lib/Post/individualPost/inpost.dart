@@ -36,7 +36,7 @@ class _InPostState extends State<InPost> {
 
   Future<void> fetchPosts() async {
     try {
-      final response = await http.get(Uri.parse('http://192.168.252.30:3000/posts'));
+      final response = await http.get(Uri.parse(''));
 
       if (response.statusCode == 200) {
         if (response.body != null) {
