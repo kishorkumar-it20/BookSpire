@@ -29,7 +29,7 @@ class _ThoughtsState extends State<Thoughts> {
     final content = contentController.text;
 
     final response = await http.post(
-      Uri.parse('http://192.168.252.30:3000/posts'), // Replace with your Node.js server URL
+      Uri.parse(''), // Replace with your Node.js server URL
       headers: <String, String>{
         'Content-Type': 'application/json',
       },
