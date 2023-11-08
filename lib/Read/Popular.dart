@@ -24,7 +24,7 @@ class _PopularState extends State<Popular> {
   Future<void> fetchPop() async{
     print("Response arrived");
     try{
-      final response = await http.get(Uri.parse("http://192.168.252.30:3000/populars"));
+      final response = await http.get(Uri.parse(""));
       if(response.statusCode == 200){
         print('Data Received');
         final List<dynamic> jsonData = json.decode(response.body);
